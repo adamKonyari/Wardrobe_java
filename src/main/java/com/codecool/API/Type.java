@@ -5,6 +5,6 @@ public enum Type {
     SHIRT,
     TROUSERS,
     BLOUSE,
-    SKIRT;
+    SKIRT
 
 }
