@@ -1,8 +1,5 @@
 package com.codecool.API;
 
-import com.codecool.API.Clothing.Blouse;
-import com.codecool.API.Clothing.Cloth;
-import com.codecool.API.Clothing.Shirt;
 import com.codecool.API.Exceptions.ClothTypeException;
 
 public abstract class Hanger {
@@ -11,7 +8,7 @@ public abstract class Hanger {
 
     public void addFirstCloth(Cloth cloth) throws ClothTypeException {
 
-        if(cloth instanceof Shirt || cloth instanceof Blouse) {
+        if(cloth.getType().equals(Type.SHIRT) || cloth.getType().equals(Type.BLOUSE)) {
             this.firstCloth = cloth;
         } else {
             throw new ClothTypeException("Invalid cloth type");

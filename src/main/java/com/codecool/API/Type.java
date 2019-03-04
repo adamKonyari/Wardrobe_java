@@ -1,4 +1,4 @@
-package com.codecool.API.Clothing;
+package com.codecool.API;
 
 public enum Type {
 

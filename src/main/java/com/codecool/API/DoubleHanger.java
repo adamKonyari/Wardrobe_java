@@ -1,8 +1,5 @@
 package com.codecool.API;
 
-import com.codecool.API.Clothing.Cloth;
-import com.codecool.API.Clothing.Skirt;
-import com.codecool.API.Clothing.Throusers;
 import com.codecool.API.Exceptions.ClothTypeException;
 
 import java.util.ArrayList;
@@ -15,7 +12,7 @@ public class DoubleHanger extends Hanger {
 
 
     public void addSecondCloth(Cloth cloth) throws ClothTypeException {
-        if(cloth instanceof Throusers || cloth instanceof Skirt) {
+        if(cloth.getType().equals(Type.SKIRT) || cloth.getType().equals(Type.TROUSERS)) {
             this.secondCloth = cloth;
         } else {
             throw new ClothTypeException("Invalid cloth type");

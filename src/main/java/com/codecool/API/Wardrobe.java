@@ -1,6 +1,5 @@
 package com.codecool.API;
 
-import com.codecool.API.Clothing.Cloth;
 import com.codecool.API.Exceptions.CapactiyException;
 import com.codecool.API.Exceptions.ClothNotFoundException;
 
